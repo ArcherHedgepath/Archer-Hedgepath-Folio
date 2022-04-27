@@ -1,0 +1,171 @@
+
+
+// Colors: https://coolors.co/121619-2d4739-09814a-bcb382-e5c687
+$base-color: #ff4554;
+$icon-color: #00c3e3;
+$border-color: #989898;
+$secondary-color: #414548;
+$tretary-color: #e60012;
+
+//animation
+$nav-transition-speed: 700ms;
+
+body::-webkit-scrollbar-track
+{
+    background: $tretary-color;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    position: fixed;
+    background-color: $secondary-color;
+    transition: width 200ms ease-in;
+
+    
+    
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    
+}
+
+.nav-item{
+    width: 100%;
+
+    &:last-child{
+        margin-top: auto;
+    }
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: $border-color;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: $nav-transition-speed;
+
+    i{
+        min-width: 2rem;
+        margin: 0 01.5rem;
+
+        
+    }
+
+    
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+
+.fa-solid{
+    //text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #0fa, 0 0 82px #0fa,0 0 92px #0fa;
+    color: $icon-color;
+    transition: $nav-transition-speed ease-in;
+
+   
+}
+
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: $icon-color;
+    background-color: $secondary-color;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    width: 100%;
+
+    
+
+    i{
+        transform: rotate(0deg);
+        transition: transform $nav-transition-speed;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .navbar{
+        bottom: 0;
+        width: 100vw;
+        height: 6rem;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .navbar-nav{
+        flex-direction: row;
+    }
+
+    .nav-link{
+        justify-content: center;
+    }
+
+    main{
+        margin: 0;
+    }
+}
+
+
+@media only screen and (min-width: 600px)
+{
+    .navbar{
+        top: 0;
+        width: 6rem;
+        height: 100vh;
+
+        &:hover{
+            width: 18rem;
+    
+            .link-text{
+                display: block;
+            }
+    
+            .logo{
+                i{
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+    
+
+    }
+    
+
+    .fa-solid{
+        &:hover{
+            text-shadow: 0 0 4px $border-color, 0 0 8px $border-color, 0 0 16px  $base-color;
+        
+        }
+
+    
+    }
+    .nav-link{
+        &:hover{
+        filter: grayscale(0%) opacity(1);
+        background-color: $secondary-color;
+        color: $border-color;
+        }
+    }
+}
+
