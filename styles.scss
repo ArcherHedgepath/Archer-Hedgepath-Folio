@@ -24,9 +24,6 @@ body{
     position: fixed;
     background-color: $secondary-color;
     transition: width 200ms ease-in;
-
-    
-    
 }
 
 .navbar-nav{
@@ -92,12 +89,29 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.3ch;
     width: 100%;
-
-    
-
+    //transition: width 200ms ease-in;
     i{
         transform: rotate(0deg);
         transition: transform $nav-transition-speed;
+    }
+}
+
+.logo-title, .logo-subtitle{
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: .1rem;
+    text-align: center;
+}
+
+.logo-title{
+    color: $base-color;
+}
+.logo-subtitle{
+    color: $border-color;
+
+    &:hover{
+        transition: $nav-transition-speed ease-in-out;
+        border-bottom: 2px solid $base-color;
     }
 }
 
@@ -136,7 +150,6 @@ body{
 
         &:hover{
             width: 18rem;
-    
             .link-text{
                 display: block;
             }
@@ -154,7 +167,7 @@ body{
 
     .fa-solid{
         &:hover{
-            text-shadow: 0 0 4px $border-color, 0 0 8px $border-color, 0 0 16px  $base-color;
+            text-shadow: 0 0 4px $border-color, 0 0 10px $border-color, 0 0 20px  $border-color;
         
         }
 
