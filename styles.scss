@@ -61,6 +61,11 @@ body{
 
         
     }
+    &:hover{
+        .fa-solid{
+            transition: $nav-transition-speed ease-in;
+        }
+    }
 
     
 }
@@ -73,9 +78,6 @@ body{
 .fa-solid{
     //text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #0fa, 0 0 82px #0fa,0 0 92px #0fa;
     color: $icon-color;
-    transition: $nav-transition-speed ease-in;
-
-   
 }
 
 .logo{
@@ -105,10 +107,12 @@ body{
 
 .logo-title{
     color: $base-color;
+    font-family: 'Abril Fatface', serif;
+    font-size: 2.5rem;
 }
 .logo-subtitle{
     color: $border-color;
-
+    font-family: serif;
     &:hover{
         transition: $nav-transition-speed ease-in-out;
         border-bottom: 2px solid $base-color;
