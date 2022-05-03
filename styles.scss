@@ -132,6 +132,11 @@ body{
 
 .text{
     color: $text-color;
+    font-size: 1.3em;
+}
+
+.body-img{
+    height: 250px;
 }
 
 @media only screen and (max-width: 600px)
