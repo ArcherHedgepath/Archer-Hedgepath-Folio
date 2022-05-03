@@ -3,9 +3,10 @@
 // Colors: https://coolors.co/121619-2d4739-09814a-bcb382-e5c687
 $base-color: #ff4554;
 $icon-color: #00c3e3;
-$border-color: #989898;
+$text-color: #dbdbdb;
 $secondary-color: #414548;
 $tretary-color: #e60012;
+$background-color: #232324;
 
 //animation
 $nav-transition-speed: 700ms;
@@ -18,6 +19,7 @@ body::-webkit-scrollbar-track
 body{
     margin: 0;
     padding: 0;
+    background-color: $background-color;
 }
 
 .navbar{
@@ -33,9 +35,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-
-    
+    height: 100%;  
 }
 
 .nav-item{
@@ -50,7 +50,7 @@ body{
     display: flex;
     align-items: center;
     height: 5rem;
-    color: $border-color;
+    color: $text-color;
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
     transition: $nav-transition-speed;
@@ -111,12 +111,27 @@ body{
     font-size: 2.5rem;
 }
 .logo-subtitle{
-    color: $border-color;
+    color: $text-color;
     font-family: serif;
     &:hover{
         transition: $nav-transition-speed ease-in-out;
         border-bottom: 2px solid $base-color;
     }
+}
+
+.port-img{
+    box-shadow: 3px 3px 2px $icon-color;
+}
+
+.header-text{
+    color: $text-color;
+    font-family: serif;
+    font-weight: bold;
+    
+}
+
+.text{
+    color: $text-color;
 }
 
 @media only screen and (max-width: 600px)
@@ -171,7 +186,7 @@ body{
 
     .fa-solid{
         &:hover{
-            text-shadow: 0 0 4px $border-color, 0 0 10px $border-color, 0 0 20px  $border-color;
+            text-shadow: 0 0 4px $text-color, 0 0 10px $text-color, 0 0 20px  $text-color;
         
         }
 
@@ -181,7 +196,7 @@ body{
         &:hover{
         filter: grayscale(0%) opacity(1);
         background-color: $secondary-color;
-        color: $border-color;
+        color: $text-color;
         }
     }
 }
