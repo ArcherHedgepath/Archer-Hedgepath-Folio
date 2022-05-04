@@ -27,6 +27,7 @@ body{
     background-color: $secondary-color;
     transition: width 200ms ease-in;
     margin: 0;
+    z-index: 10;
 }
 
 .navbar-nav{
@@ -86,17 +87,21 @@ body{
     text-transform: uppercase;
     margin-bottom: 1rem;
     text-align: center;
-    color: $icon-color;
+    color: $text-color;
     background-color: $secondary-color;
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.3ch;
     width: 100%;
-    //transition: width 200ms ease-in;
+
     i{
         transform: rotate(0deg);
-        transition: transform $nav-transition-speed;
+        transition: 200ms;
     }
+}
+
+.logo-text{
+    left: -999px;
 }
 
 .logo-title, .logo-subtitle{
@@ -145,6 +150,7 @@ body{
     border-bottom: 2px solid $base-color;
 }
 
+
 @media only screen and (max-width: 600px)
 {
     .navbar{
@@ -177,17 +183,26 @@ body{
         top: 0;
         width: 6rem;
         height: 100vh;
-
+        
         &:hover{
             width: 18rem;
+            
             .link-text{
-                display: block;
+                display: inline;
             }
     
             .logo{
                 i{
+                    
+                    margin-left: 0rem;
                     transform: rotate(-180deg);
+                    transition: 1000ms;
                 }
+            }
+
+            .logo-text{
+                
+                left: 0px;
             }
         }
     
