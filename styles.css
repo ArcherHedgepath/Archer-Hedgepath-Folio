@@ -13,6 +13,7 @@ body {
   background-color: #414548;
   -webkit-transition: width 200ms ease-in;
   transition: width 200ms ease-in;
+  margin: 0;
 }
 
 .navbar-nav {
@@ -130,6 +131,7 @@ body {
   color: #dbdbdb;
   font-family: serif;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .text {

@@ -26,6 +26,7 @@ body{
     position: fixed;
     background-color: $secondary-color;
     transition: width 200ms ease-in;
+    margin: 0;
 }
 
 .navbar-nav{
@@ -127,6 +128,7 @@ body{
     color: $text-color;
     font-family: serif;
     font-weight: bold;
+    text-decoration: underline;
     
 }
 
