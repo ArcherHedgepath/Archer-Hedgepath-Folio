@@ -1,4 +1,5 @@
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
+  width: 5px;
   background: #e60012;
 }
 
@@ -108,7 +109,7 @@ body {
 .logo-title {
   color: #ff4554;
   font-family: 'Abril Fatface', serif;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .logo-subtitle {
@@ -128,7 +129,7 @@ body {
 }
 
 .header-text {
-  color: #dbdbdb;
+  color: #00c3e3;
   font-family: serif;
   font-weight: bold;
   text-decoration: underline;
@@ -141,6 +142,10 @@ body {
 
 .body-img {
   height: 250px;
+}
+
+.divider {
+  border-bottom: 2px solid #ff4554;
 }
 
 @media only screen and (max-width: 600px) {

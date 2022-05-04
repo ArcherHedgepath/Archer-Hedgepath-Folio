@@ -109,7 +109,7 @@ body{
 .logo-title{
     color: $base-color;
     font-family: 'Abril Fatface', serif;
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 .logo-subtitle{
     color: $text-color;
@@ -125,7 +125,7 @@ body{
 }
 
 .header-text{
-    color: $text-color;
+    color: $icon-color;
     font-family: serif;
     font-weight: bold;
     text-decoration: underline;
@@ -139,6 +139,10 @@ body{
 
 .body-img{
     height: 250px;
+}
+
+.divider{
+    border-bottom: 2px solid $base-color;
 }
 
 @media only screen and (max-width: 600px)
